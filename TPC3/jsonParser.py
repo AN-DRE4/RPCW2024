@@ -9,7 +9,7 @@ f.close()
 ttl = ""
 for cidade in bd['cidades']:
     ttl += f"""
-###  http://www.semanticweb.org/utilizador/ontologies/2024/1/mapa-virtual#{cidade["id"]}
+###  http://www.semanticweb.org/utilizador/ontologies/2024/2/mapa-virtual#{cidade["id"]}
 :{cidade["id"]} rdf:type owl:NamedIndividual ,
                 :cidade ;
          :descricao "{cidade["descrição"]}" ;
@@ -21,7 +21,7 @@ for cidade in bd['cidades']:
 
 for ligacao in bd['ligacoes']:
     ttl += f"""
-###  http://www.semanticweb.org/utilizador/ontologies/2024/1/mapa-virtual#{ligacao["id"]}
+###  http://www.semanticweb.org/utilizador/ontologies/2024/2/mapa-virtual#{ligacao["id"]}
 :{ligacao["id"]} rdf:type owl:NamedIndividual ,
                 :ligacao ;
          :destino :{ligacao["destino"]} ;
