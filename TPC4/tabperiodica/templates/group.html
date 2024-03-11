@@ -23,7 +23,7 @@
                 {% for entry in data %}
                 <tr>
                     <td>{{entry.na.value}}</td>
-                    <td><a href="/elements/{{entry.na.value}}">{{entry.nomeElem.value}}</td>
+                    <td><a href="/elements/{{entry.na.value}}">{{entry.nomeElem.value.capitalize()}}</td>
                     <td>{{entry.simb.value}}</td>
                 </tr>
                 {% endfor %}

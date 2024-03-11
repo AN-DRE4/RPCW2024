@@ -24,7 +24,7 @@
                 {% for entry in data %}
                     <tr onclick="window.location='{{ "/elements/" + entry.n.value }}';" style="cursor:pointer;">
                         <td>{{ entry.n.value }}</td>
-                        <td>{{ entry.nome.value }}</td>
+                        <td>{{ entry.nome.value.capitalize() }}</td>
                         <td>{{ entry.simb.value }}</td>
                         <td>{{ entry.grupo.value.split('#')[-1] }}</td>
                     </tr>
